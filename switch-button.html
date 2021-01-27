@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Switch Button with CSS</title>
+   <style>
+      input {
+         width: 80px;
+         height: 40px;
+         outline: none;
+         appearance: none;
+         background-color: #F2AEBB;
+         border-radius: 25px;
+         margin: 0;
+         transition: .5s;
+      }
+      input:checked {
+         background-color: #89D9C2;
+         transition: .5s;
+      }
+      input::before {
+         content: '';
+         width: 40px;
+         height: 40px;
+         border-radius: 25px;
+         background-color: #BF2441;
+         position: absolute;
+         left: 5px;
+         transition: .5s;
+      }
+      input:checked::before {
+         background-color: #03A678;
+         left: 50px;
+         transition: .5s;
+      }
+   </style>
+</head>
+<body>
+   <input type="checkbox" name="switch">
+</body>
+</html>
